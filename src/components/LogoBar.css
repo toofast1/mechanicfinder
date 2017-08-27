@@ -1,0 +1,36 @@
+.root {
+    display: flex;
+    background-color: #fff;
+    height: 56px;
+    justify-content: center;
+    box-shadow: 0 0 5px 0 #333;
+}
+
+img {
+    width: 33%;
+    height: 90%;
+}
+
+@media screen and (min-width: 500px) {
+    img {
+        width: 27%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    img {
+        width: 18%;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    img {
+        width: 15%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    img {
+        width: 11%;
+    }
+}
