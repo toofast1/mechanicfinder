@@ -4,9 +4,9 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-const indexConfig = { 
-    title: 'Mechanic Finder - Busca tu Taller',
-    favicon: path.join(__dirname, 'src', 'assets', 'img', 'logo.png')
+const indexConfig = {
+    favicon: path.join(__dirname, 'src', 'assets', 'img', 'logo.png'),
+    template: path.join(__dirname, 'src', 'index.html')
 };
 
 const conf = {
@@ -21,7 +21,6 @@ const conf = {
         historyApiFallback: true,
         hot: true,
         port: 3000,
-        open: true,
         overlay: true,
         watchContentBase: true
     },
@@ -42,7 +41,7 @@ const conf = {
             },
             {
                 test: /\.css$/,
-                use: ExtractTextPlugin.extract({
+                use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({
                     use: [
                         {
                             loader: 'css-loader',
@@ -56,7 +55,7 @@ const conf = {
                         { loader: 'postcss-loader', options: { plugins: [require('autoprefixer')()] } }
                     ],
                     fallback: 'style-loader?sourceMap'
-                })
+                }))
             },
             {
                 test: /\.(jpe?g|png|gif|svg|ttf)$/i,
