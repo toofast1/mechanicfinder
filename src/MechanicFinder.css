@@ -1,6 +1,12 @@
 .banner {
     display: flex;
-    margin: 80px 0;
+    margin-top: 62px;
+    margin-bottom: 37px;
+    justify-content: center;
+}
+
+.search {
+    display: flex;
     justify-content: center;
 }
 
@@ -8,7 +14,7 @@ p {
     font-size: 22px;
     font-family: 'Roboto', 'sans-serif';
     text-align: center;
-    color: #777;
+    color: #007fad;
     max-width: 250px;
 }
 

@@ -1,0 +1,52 @@
+.root {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    font-family: 'Roboto', 'sans-serif';
+    padding-left: 12px;
+    font-size: 16px;
+    height: 45px;
+    color: #37454d;
+    border: 1px solid #9ba2a6;
+    border-radius: 2px 0 0 2px;
+    text-overflow: ellipsis;    
+}
+
+input:focus {
+    outline: 2px solid #70ace9
+}
+
+button {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 16px;
+    background: #007EAD;
+    border: none;
+    color: #fff;
+    height: 49px;
+}
+
+button:focus {
+    outline: none;
+}
+
+@media screen and (min-width: 450px) {
+    input {
+        width: 300px;
+    }
+    button {
+        width: 50px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    input {
+        width: 500px;
+    }
+    button {
+        font-size: 16px;
+        width: 100px;
+    }
+}

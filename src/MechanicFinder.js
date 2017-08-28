@@ -13,7 +13,9 @@ class MechanicFinder extends Component {
         <div className={styles["banner"]}>
           <p>Encuentra tu taller al mejor precio</p>
         </div>
-        <SearchBox />
+        <div className={styles["search"]}>
+          <SearchBox />
+        </div>
       </div>
     );
   }
