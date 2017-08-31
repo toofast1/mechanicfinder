@@ -36,7 +36,6 @@ const conf = {
         rules: [
             {
                 test: /\.js$/,
-                exclude: /node_modules/,
                 use: 'babel-loader'          
             },
             {
@@ -60,6 +59,10 @@ const conf = {
             {
                 test: /\.(jpe?g|png|gif|svg|ttf)$/i,
                 loaders: ['url-loader']
+            },
+            {
+                test: /\.json/,
+                use: 'json-loader'
             }
         ]
     },
