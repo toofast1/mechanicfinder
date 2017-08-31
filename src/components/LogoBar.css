@@ -1,12 +1,13 @@
 .root {
     display: flex;
+    justify-content: center;
     background-color: #fff;
     height: 56px;
-    justify-content: center;
     box-shadow: 0 0 5px 0 #333;
 }
 
 img {
+    cursor: pointer;
     width: 33%;
     height: 90%;
 }

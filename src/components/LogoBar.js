@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 
 import Logo from 'assets/img/logo';
 
 import styles from './LogoBar.css';
 
-class LogoBar extends Component {
-  render() {
-    return (
-      <div className={styles["root"]}>
-        <img src={Logo} />
-      </div>
-    );
-  }
-}
+const Img = withRouter(({ history }) => (
+  <img src={Logo} onClick={e => history.push('/')} />
+));
+
+const LogoBar = () => (
+  <div className={styles.root}>
+    <Img />
+  </div>
+);
 
 export default LogoBar;
