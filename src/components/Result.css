@@ -1,0 +1,87 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', 'sans-serif';
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 #999;
+    color: #555;
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+.picture {
+    display: block;
+    width: 100%;
+    max-height: 180px;
+}
+
+.details {
+    padding: 25px 18px 18px 18px;
+}
+
+.title {
+    margin-top: 0;
+}
+
+.description {
+    font-size: 16px;
+}
+
+.keyword-list {
+    display: flex;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.keyword {
+    width: fit-content;
+    padding: 3px;
+    border-radius: 5px;
+    border: 2px solid #555;
+    margin: 5px 2px;
+}
+
+.separator {
+    background: #ccc;
+    height: 1px;
+    margin:  13px 0;
+}
+
+.extra-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats {
+    display: flex;
+}
+
+@media screen and (min-width: 600px) {
+    .root {
+        width: 81%;
+    }
+    .picture {
+        max-height: 210px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .root {
+        width: 71%;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .root {
+        width: 66%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .root {
+        width: 50%;
+    }
+    .picture {
+        max-height: 260px;
+    }
+}
