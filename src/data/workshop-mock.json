@@ -1,0 +1,152 @@
+[
+    {
+        "name": "Autocentro Molinari",
+        "location": "Los Álamos, boulevard del norte, atrás de supermercado la colonia, Atrás de estación de gas LPG tropigas, San Pedro Sula 21102, Honduras",
+        "userScore": 4.2,
+        "picture": "",
+        "description": "Servicio de restauracion de automoviles",
+        "keywords": ["Pintura", "Carroceria"],
+        "comments": [],
+        "highPrice": 450
+    },
+    {
+        "name": "Lubricantes Del Norte",
+        "location": "Bulevar del Norte, Contiguo a Canal 11, frente a Cerveceria Hindureña,, San Pedro Sula 21102, Honduras",
+        "userScore": 4,
+        "picture": "",
+        "description": "Servicio de cambios de aceite y mas",
+        "keywords": ["Aceite", "Baterias", "Varios"],
+        "comments": [],
+        "highPrice": 1200
+    },
+    {
+        "name": "Radiadores Mora",
+        "location": "San Pedro Sula 21101, Honduras",
+        "userScore": 5,
+        "picture": "",
+        "description": "Servicio en cambio y reparacion de radiadores",
+        "keywords": ["Radiador"],
+        "comments": [],
+        "highPrice": 1500
+    },
+    {
+        "name": "Taller de Transmisiones Zelaya",
+        "location": "15 Calle 2 Ave. N.E. Bo. Guadalupe, San Pedro Sula 21102, Honduras",
+        "userScore": 4.5,
+        "picture": "",
+        "description": "Servicio en cambio y reparacion de transmisiones",
+        "keywords": ["Transmision"],
+        "comments": [],
+        "highPrice": 450
+    },
+    {
+        "name": "Centro de Servicio LTH",
+        "location": "Avenida Circunvalacion, San Pedro Sula 21102, Honduras",
+        "userScore": 3,
+        "picture": "",
+        "description": "Servicio de venta, cambio de baterias",
+        "keywords": ["Bateria"],
+        "comments": [],
+        "highPrice": 200
+    },
+    {
+        "name": "TPA Repuestos & Taller Todo Transmisiones",
+        "location": "5ta. Ave. N.O. 8 y 9 Calle N.O. Bo. Guamilito, San Pedro Sula 21102, Honduras",
+        "userScore": 5,
+        "picture": "",
+        "description": "Servicio de venta, cambio de transmisiones",
+        "keywords": ["Transmision"],
+        "comments": [],
+        "highPrice": 400
+    },
+    {
+        "name": "Taller de Transmisiones Automaticas Lara",
+        "location": "5 Avenida NO, San Pedro Sula 21102, Honduras",
+        "userScore": 2.3,
+        "picture": "",
+        "description": "Servicion en cambio de transmisiones",
+        "keywords": ["Transmision"],
+        "comments": [],
+        "highPrice": 1800
+    },
+    {
+        "name": "Autoservicio Robelo",
+        "location": "1 4 Avenida NE, San Pedro Sula 21101, Honduras",
+        "userScore": 4.1,
+        "picture": "",
+        "description": "Servicio en cambio de aceite y reparacion de vehiculos",
+        "keywords": ["Aceite", "Carroceria"],
+        "comments": [],
+        "highPrice": 550
+    },
+    {
+        "name": "Auseva",
+        "location": "San Pedro Sula 21101, Honduras",
+        "userScore": 4.2,
+        "picture": "",
+        "description": "Servicio de reparacion de vehiculos",
+        "keywords": ["Aceite", "Alineacion", "Carroceria"],
+        "comments": [],
+        "highPrice": 300
+    },
+    {
+        "name": "Triple A autopartes",
+        "location": "6 Avenida, 2 Calle, Noreste, San Pedro Sula 21101, Honduras",
+        "userScore": 4.4,
+        "picture": "",
+        "description": "Tienda de repuestos para automoviles",
+        "keywords": ["Aceite", "Neumatico", "Frenos", "Alineacion"],
+        "comments": [],
+        "highPrice": 900
+    },
+    {
+        "name": "Auto Frenos Del Norte",
+        "location": "San Pedro Sula 21103, Honduras",
+        "userScore": 3.4,
+        "picture": "",
+        "description": "Taller mecanico",
+        "keywords": ["Frenos", "Alineacion", "Transmision"],
+        "comments": [],
+        "highPrice": 550
+    },
+    {
+        "name": "Deporti Llantas",
+        "location": "Avenida Juan Pablo II, frente a Ferreteria Sumaco,, 6 Calle NE, San Pedro Sula 21101, Honduras",
+        "userScore": 4.3,
+        "picture": "",
+        "description": "Servicio en venta de llantas",
+        "keywords": ["Neumatico"],
+        "comments": [],
+        "highPrice": 600
+    },
+    {
+        "name": "Reencauchadora en Frio Sula",
+        "location": "11 Avenida SE, San Pedro Sula 377, Honduras",
+        "userScore": 5,
+        "picture": "",
+        "description": "Taller de reparacion de automoviles",
+        "keywords": ["Neumatico", "Radiador"],
+        "comments": [],
+        "highPrice": 1000
+    },
+    {
+        "name": "Taller Buendia Con Jesus BJNCC",
+        "location": "14 Avenida 8 calle SE, San Pedro Sula 21103, Honduras",
+        "userScore": 5,
+        "picture": "",
+        "description": "Taller de automoviles",
+        "keywords": ["Rines", "Transmision", "Pintura", "Carroceria", "Radiador"],
+        "comments": [],
+        "highPrice": 768
+    },
+    {
+        "name": "ALLAS - Repuestos, Talleres y Llantas",
+        "location": "Barrio Barandillas, Avenida Junior, 2 Calle NE, 2 Calle NE, San Pedro Sula 21101, Honduras",
+        "userScore": 4.2,
+        "picture": "",
+        "description": "Tienda de repuestos para automoviles",
+        "keywords": ["Neumatico", "Bateria", "Radiador", "Aceite"],
+        "comments": [],
+        "highPrice": 1000
+    }
+]
