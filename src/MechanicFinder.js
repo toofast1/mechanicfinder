@@ -1,21 +1,19 @@
 import React, { Component } from 'react';
+import { Switch, Route } from 'react-router-dom';
 
 import LogoBar from './components/LogoBar';
-import SearchBox from './components/SearchBox';
-
-import styles from './MechanicFinder.css';
+import HomeContent from './components/HomeContent';
+import SearchResults from './components/SearchResults';
 
 class MechanicFinder extends Component {
   render() {
     return (
       <div>
         <LogoBar />
-        <div className={styles["banner"]}>
-          <p>Encuentra tu taller al mejor precio</p>
-        </div>
-        <div className={styles["search"]}>
-          <SearchBox />
-        </div>
+        <Switch>
+          <Route exact path="/" component={HomeContent} />
+          <Route path="/:querystr" component={SearchResults} />
+        </Switch>
       </div>
     );
   }
