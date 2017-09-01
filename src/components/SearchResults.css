@@ -9,8 +9,36 @@
     padding: 25px;
 }
 
-.results {
+.results, .sorting {
     display: flex;
     justify-content: center;
     padding-top: 20px;
+}
+
+.sorting-select, .result-list {
+    width: 90%;
+}
+
+@media screen and (min-width: 600px) {
+    .sorting-select, .result-list {
+        width: 81%;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .sorting-select, .result-list {
+        width: 71%;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .sorting-select, .result-list {
+        width: 66%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .sorting-select, .result-list {
+        width: 50%;
+    }
 }

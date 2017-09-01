@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import SearchBox from './SearchBox';
 import ResultList from './ResultList';
+import Select from './Select';
+import Option from './Option';
 
 import styles from './SearchResults.css';
 
@@ -33,7 +35,7 @@ class SearchResults extends Component {
   constructor(props) {
     super();
 
-    const queryStr = props.match.params.querystr
+    const queryStr = props.match.params.querystr;
     
     this.state = {
       queryStr,
@@ -54,8 +56,14 @@ class SearchResults extends Component {
         <div className={styles.search}>
           <SearchBox value={queryStr} onChange={e => this.onQueryStrChange(e)} />
         </div>
+        <div className={styles.sorting}>
+          <Select className={styles["sorting-select"]}>
+            <Option>Ordenar por Precio</Option>
+            <Option>Ordenar por Puntaje</Option>
+          </Select> 
+        </div>
         <div className={styles.results}>
-          <ResultList results={results} />
+          <ResultList elementClass={styles["result-list"]} results={results} />
         </div>
       </div>
     );

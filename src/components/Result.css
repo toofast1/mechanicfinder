@@ -57,30 +57,12 @@
 }
 
 @media screen and (min-width: 600px) {
-    .root {
-        width: 81%;
-    }
     .picture {
         max-height: 210px;
     }
 }
 
-@media screen and (min-width: 700px) {
-    .root {
-        width: 71%;
-    }
-}
-
-@media screen and (min-width: 750px) {
-    .root {
-        width: 66%;
-    }
-}
-
 @media screen and (min-width: 1024px) {
-    .root {
-        width: 50%;
-    }
     .picture {
         max-height: 260px;
     }
