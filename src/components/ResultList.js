@@ -6,14 +6,15 @@ import Result from './Result';
 
 import styles from './ResultList.css';
 
-const ResultList = ({ className = '', style = {}, results = [] }) => (
+const ResultList = ({ className = '', elementClass = '', style = {}, results = [] }) => (
   <div className={`${styles.root} ${className}`} style={style}>
-    {results.map((e, i) => (<Result key={i} data={e} />))}
+    {results.map((e, i) => (<Result className={elementClass} key={i} data={e} />))}
   </div>
 );
 
 ResultList.propTypes = {
   className: PropTypes.string,
+  elementClass: PropTypes.string,
   style: PropTypes.object,
   results: PropTypes.arrayOf(PropTypes.object)
 };
