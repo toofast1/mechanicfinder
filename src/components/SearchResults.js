@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import queryString from 'query-string';
 
 import SearchBox from './SearchBox';
 import ResultList from './ResultList';
@@ -62,8 +63,8 @@ class SearchResults extends Component {
   constructor(props) {
     super();
 
-    const queryStr = props.match.params.querystr;
-    
+    const queryStr = queryString.parse(props.location.search).q;
+
     this.state = {
       queryStr,
       results: sortByPrice(queryResults(queryStr)),

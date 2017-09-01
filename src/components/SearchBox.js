@@ -6,12 +6,10 @@ import styles from './SearchBox.css';
 
 const linkStyle = { color: "#fff", textDecoration: "none" }; 
 
-function cleanQueryStr(str) {
-  return str.split('').filter(c => c != '/').join("");
-}
-
 function search(history, value) {
-  history.push(`/${cleanQueryStr(value)}`);
+  value = value.trim();
+  if (value.length > 0)
+    history.push(`/buscar?q=${value}`);
 }
 
 const Input = withRouter(({ value, onChange, history }) => (
