@@ -21,6 +21,11 @@
 
 .title {
     margin-top: 0;
+    cursor: pointer;
+}
+
+.title:hover {
+    text-decoration: underline;
 }
 
 .description {

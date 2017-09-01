@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
 import FaStarO from 'react-icons/fa/star-o';
 import FaMoney from 'react-icons/fa/money';
@@ -21,11 +21,15 @@ const IconPair = ({ Icon, text = '', title = '', style = {} }) => (
   </div>
 );
 
+const H2 = withRouter(({ className, history, children }) => (
+  <h2 className={className} onClick={e => history.push(`/workshops/${children}`)} >{children}</h2>
+));
+
 const Result = ({ className = '', style = {}, data }) => (
   <div className={`${styles.root} ${className}`} style={style}>
     { data.picture ? <img className={styles.picture} src={data.picture} alt="Foto del taller" /> : null }
     <div className={styles.details}>
-      <h2 className={styles.title}>{data.name}</h2>
+      <H2 className={styles.title}>{data.name}</H2>
       <div className={styles.stats}>
         <IconPair
           Icon={FaStarO}

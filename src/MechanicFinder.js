@@ -12,7 +12,8 @@ class MechanicFinder extends Component {
         <LogoBar />
         <Switch>
           <Route exact path="/" component={HomeContent} />
-          <Route path="/:querystr" component={SearchResults} />
+          <Route path="/buscar" component={SearchResults} />
+          <Route path="/talleres/:workshop" component={<div>Taller zi!</div>} />
         </Switch>
       </div>
     );
