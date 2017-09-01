@@ -58,17 +58,6 @@ function sortByScore(results = []) {
   });
 }
 
-function sortByScore(results = []) {
-  return results.sort((a, b) => {
-    if (a.userScore < b.userScore)
-      return 1;
-    else if (a.userScore > b.userScore)
-      return -1;
-
-      return 0;
-  });
-}
-
 class SearchResults extends Component {
   constructor(props) {
     super();
