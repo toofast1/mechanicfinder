@@ -9,6 +9,11 @@ import styles from './SearchResults.css';
 
 import workshopMock from '../data/workshop-mock.json';
 
+const SORTING_OPTIONS = {
+  PRICE: { text: 'Ordenar por Precio', sortingFn: sortByPrice },
+  SCORE: { text: 'Ordenar por Puntaje', sortingFn: sortByScore }
+};
+
 function nameMatches({ name }, queryStr) {
   return name.match(new RegExp(queryStr, "i"));
 }
@@ -31,6 +36,39 @@ function queryResults(queryStr) {
       locationMatches(w, queryStr));
 }
 
+function sortByPrice(results = []) {
+  return results.sort((a, b) => {
+    if (a.highPrice < b.highPrice)
+      return -1;
+    else if (a.highPrice > b.highPrice)
+      return 1;
+
+      return 0;
+  });
+}
+
+function sortByScore(results = []) {
+  return results.sort((a, b) => {
+    if (a.userScore < b.userScore)
+      return 1;
+    else if (a.userScore > b.userScore)
+      return -1;
+
+      return 0;
+  });
+}
+
+function sortByScore(results = []) {
+  return results.sort((a, b) => {
+    if (a.userScore < b.userScore)
+      return 1;
+    else if (a.userScore > b.userScore)
+      return -1;
+
+      return 0;
+  });
+}
+
 class SearchResults extends Component {
   constructor(props) {
     super();
@@ -39,7 +77,8 @@ class SearchResults extends Component {
     
     this.state = {
       queryStr,
-      results: queryResults(queryStr)
+      results: sortByPrice(queryResults(queryStr)),
+      selectedSort: 'PRICE'
     };
   }
   componentWillReceiveProps(props) {
@@ -48,8 +87,15 @@ class SearchResults extends Component {
   onQueryStrChange(e) {
     this.setState({ ...this.state, queryStr: e.target.value });
   }
+  onSortingSelectChange(e) {
+    const selectedSort = e.target.value;
+    const results = SORTING_OPTIONS[selectedSort].sortingFn([ ...this.state.results ]);
+
+    this.setState({ ...this.state, results, selectedSort });
+  }
   render() {
-    const { queryStr, results } = this.state;
+    const { queryStr, results, selectedSort } = this.state;
+    const sortingOptions = Object.keys(SORTING_OPTIONS);
     
     return (
       <div className={styles.root}>
@@ -57,9 +103,9 @@ class SearchResults extends Component {
           <SearchBox value={queryStr} onChange={e => this.onQueryStrChange(e)} />
         </div>
         <div className={styles.sorting}>
-          <Select className={styles["sorting-select"]}>
-            <Option>Ordenar por Precio</Option>
-            <Option>Ordenar por Puntaje</Option>
+          <Select className={styles["sorting-select"]} value={selectedSort} 
+                  onChange={this.onSortingSelectChange.bind(this)}>
+            {sortingOptions.map((so, i) => <Option key={i} value={so}>{SORTING_OPTIONS[so].text}</Option>)}
           </Select> 
         </div>
         <div className={styles.results}>

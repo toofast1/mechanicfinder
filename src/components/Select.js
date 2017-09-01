@@ -17,7 +17,7 @@ Select.propTypes = {
   className: PropTypes.string,
   onChange: PropTypes.func,
   style: PropTypes.object,
-  value: PropTypes.number
+  value: PropTypes.any
 };
 
 export default Select;
