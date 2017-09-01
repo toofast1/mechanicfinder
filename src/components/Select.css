@@ -1,0 +1,9 @@
+.root {
+    display: block;
+    background: #fff;
+    font-family: 'Roboto', 'sans-serif';
+    color: #555;
+    font-size: 14px;
+    padding: 10px;
+    outline: none;
+}
