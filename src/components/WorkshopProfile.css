@@ -1,0 +1,19 @@
+.root {
+    font-family: 'Roboto', 'sans-serif';
+    color: #555;
+}
+
+.img-area {
+    width: 100%;
+    height: 30%;
+}
+
+.img-area > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.details, .comments {
+    padding: 0 15px;
+}
