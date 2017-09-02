@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 
 import StarRating from './StarRating';
+import CommentSection from './CommentSection';
 
 import defaultImg from 'assets/img/taller-tmp';
 
@@ -24,8 +25,14 @@ class WorkshopProfile extends Component {
   onRatingChange(rating) {
     this.setState({ ...this.state, rating });
   }
+  onNewComment(comment) {
+    this.setState({ 
+      ...this.state, 
+      comments: [...this.state.comments, comment] 
+    });
+  }
   render() {
-    const { workshop, onRatingChange } = this;
+    const { workshop, onRatingChange, onNewComment } = this;
     const { rating, comments } = this.state;
     const pic = workshop.picture.length > 0 ?
       workshop.picture : defaultImg;
@@ -38,23 +45,20 @@ class WorkshopProfile extends Component {
         </div>
         <div className={styles.details}>
           <h2>{workshop.name}</h2>
-          <StarRating starCount={5} value={Math.round(rating)} onChange={onRatingChange.bind(this)} />
+          <StarRating
+            starCount={5}
+            value={Math.round(rating)}
+            onChange={onRatingChange.bind(this)} 
+          />
           <p><b>Precio Alto:</b> Lps. {workshop.highPrice}</p>
           <p><b>Descripcion:</b> {workshop.description}</p>
           <p><b>Ubicacion:</b> {workshop.location}</p>
         </div>
-        {/* <div className={styles.comments}>
-          <h3>Comentarios ({workshop.comments.length})</h3>
-          <ul>
-            {comments.map((c, i) => <li key={i}>Comment</li>)}
-          </ul>
-        </div>
-        <form>
-          <label>Nombre</label>
-          <input type="text" placeholder="e.g. wupa9" />
-          <label>Comentario</label>
-          <textarea></textarea>
-        </form> */}
+        <CommentSection
+          className={styles.comments}
+          comments={comments}
+          onNewComment={onNewComment.bind(this)}
+        />
       </div> :
       <Redirect to="/" />
     );
