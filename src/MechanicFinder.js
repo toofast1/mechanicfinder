@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import LogoBar from './components/LogoBar';
 import HomeContent from './components/HomeContent';
 import SearchResults from './components/SearchResults';
+import WorkshopProfile from './components/WorkshopProfile';
 
 class MechanicFinder extends Component {
   render() {
@@ -13,7 +14,7 @@ class MechanicFinder extends Component {
         <Switch>
           <Route exact path="/" component={HomeContent} />
           <Route path="/buscar" component={SearchResults} />
-          <Route path="/talleres/:workshop" component={<div>Taller zi!</div>} />
+          <Route path="/:workshop" component={WorkshopProfile} />
         </Switch>
       </div>
     );

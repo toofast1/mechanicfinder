@@ -22,7 +22,7 @@ const IconPair = ({ Icon, text = '', title = '', style = {} }) => (
 );
 
 const H2 = withRouter(({ className, history, children }) => (
-  <h2 className={className} onClick={e => history.push(`/workshops/${children}`)} >{children}</h2>
+  <h2 className={className} onClick={e => history.push(`/${children}`)} >{children}</h2>
 ));
 
 const Result = ({ className = '', style = {}, data }) => (
