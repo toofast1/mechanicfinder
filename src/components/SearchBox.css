@@ -3,7 +3,7 @@
     align-items: center;
 }
 
-input {
+.root > input {
     font-family: 'Roboto', 'sans-serif';
     padding-left: 12px;
     font-size: 16px;
@@ -14,11 +14,11 @@ input {
     text-overflow: ellipsis;    
 }
 
-input:focus {
+.root > input:focus {
     outline: 2px solid #70ace9
 }
 
-button {
+.root > button {
     font-family: 'Roboto', 'sans-serif';
     font-size: 16px;
     background: #007EAD;
@@ -27,25 +27,25 @@ button {
     height: 49px;
 }
 
-button:focus {
+.root > button:focus {
     outline: none;
 }
 
 @media screen and (min-width: 450px) {
-    input {
+    .root > input {
         width: 300px;
     }
-    button {
+    .root > button {
         width: 50px;
         font-size: 12px;
     }
 }
 
 @media screen and (min-width: 700px) {
-    input {
+    .root > input {
         width: 500px;
     }
-    button {
+    .root > button {
         font-size: 16px;
         width: 100px;
     }
