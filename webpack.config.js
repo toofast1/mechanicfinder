@@ -35,7 +35,7 @@ const conf = {
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.jsx?$/,
                 use: 'babel-loader'          
             },
             {
