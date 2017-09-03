@@ -34,6 +34,9 @@ class WorkshopProfile extends Component {
       comments: this.workshop.comments
     };
   }
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   onRatingChange(rating) {
     this.setState({ ...this.state, rating });
   }
