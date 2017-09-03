@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import LogoBar from './components/LogoBar';
+import Footer from './components/Footer';
 import HomeContent from './components/HomeContent';
 import SearchResults from './components/SearchResults';
 import WorkshopProfile from './components/WorkshopProfile';
@@ -16,6 +17,7 @@ class MechanicFinder extends Component {
           <Route path="/buscar" component={SearchResults} />
           <Route path="/:workshop" component={WorkshopProfile} />
         </Switch>
+        <Footer />
       </div>
     );
   }
