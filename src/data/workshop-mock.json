@@ -86,8 +86,8 @@
         "picture": "",
         "description": "Servicio de reparacion de vehiculos",
         "keywords": ["Aceite", "Alineacion", "Carroceria"],
-        "comments": [ { "userName": "wupa9", "body": "Super great service!" },
-                      { "userName": "guest", "body": "Super great service!" } ],
+        "comments": [ { "userName": "wupa9", "body": "Super great service!", "rating": 4 },
+                      { "userName": "guest", "body": "Super great service!", "rating": 5 } ],
         "highPrice": 300
     },
     {
