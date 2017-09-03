@@ -18,31 +18,36 @@ const PrimarySection = props => (
 const Footer = props => (
   <footer className={styles.root}>
     <div className={styles.primary}>
-      <div className={styles.newsletter}>
-        <p>Quieres recibir nuestras ofertas? Suscribete a nuestro newsletter!</p>
-        <div className={styles["newsletter-form"]}> 
-          <input type="text" placeholder="Correo Electronico" />
-          <button>Suscribete</button>
+      <div>
+        <div className={styles.newsletter}>
+          <p>Quieres recibir nuestras ofertas? Suscribete a nuestro newsletter!</p>
+          <div className={styles["newsletter-form"]}> 
+            <input type="text" placeholder="Correo Electronico" />
+            <button>Suscribete</button>
+          </div>
+        </div>
+        <Separator className={styles["newsletter-separator"]} color="#697379" width={2} />
+        <div className={styles.primaries}>
+          <PrimarySection title="Nuestra Empresa">
+            <p>Empresa</p>
+            <p>Trabajos</p>
+            <p>Carreras</p>
+            <p>Prensa</p>
+            <p>Inversionistas</p>
+          </PrimarySection>
+          <PrimarySection title="Contactanos">
+            <div className={styles.social}>
+              <FaFacebookOfficial />
+              <FaTwitter />
+              <FaInstagram />
+              <FaGooglePlus />
+              <FaYoutubePlay />
+              <FaPinterest />
+              <FaLinkedin />
+            </div>
+          </PrimarySection>
         </div>
       </div>
-      <PrimarySection title="Nuestra Empresa">
-        <p>Empresa</p>
-        <p>Trabajos</p>
-        <p>Carreras</p>
-        <p>Prensa</p>
-        <p>Inversionistas</p>
-      </PrimarySection>
-      <PrimarySection title="Contactanos">
-        <div className={styles.social}>
-          <FaFacebookOfficial />
-          <FaTwitter />
-          <FaInstagram />
-          <FaGooglePlus />
-          <FaYoutubePlay />
-          <FaPinterest />
-          <FaLinkedin />
-        </div>
-      </PrimarySection>
     </div>
     <div className={styles.secondary}>
       <ul className={styles.appendix}>

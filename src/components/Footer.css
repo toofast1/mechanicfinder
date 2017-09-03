@@ -11,6 +11,9 @@
 }
 
 .primary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #293339;
     padding-bottom: 30px;
 }
@@ -57,8 +60,17 @@
     color: #fff;
     font-size: 16px;
     font-weight: bold;
+    background-color: #697379;
+    border: 1px solid #697379;
+}
+
+.newsletter-form button:hover {
     background-color: #37454d;
     border: 1px solid #37454d;
+}
+
+.newsletter-separator {
+    visibility: hidden;
 }
 
 .social {
@@ -106,4 +118,46 @@
     font-size: 12px;
     padding: 12px 16px 16px;
     text-align: center;
+}
+
+@media screen and (min-width: 575px) {
+    .newsletter-form {
+        flex-direction: row;
+    }
+    .newsletter-form input {
+        width: 75%;
+    }
+    .newsletter-form button {
+        width: 25%;
+        margin: 0;
+        height: 46px;
+    }
+    .primaries {
+        display: flex;
+        justify-content: space-between;
+    }
+    .primary-section {
+        width: 48%;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .newsletter {
+        display: flex;
+    }
+    .newsletter-form {
+        margin: 16px 0 20px 40px;
+    }
+    .newsletter-form input {
+        width: 400px;
+    }
+    .newsletter-form button {
+        width: 100px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .newsletter-separator {
+        visibility: visible;
+    }
 }
