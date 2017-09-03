@@ -8,7 +8,15 @@ import styles from './Comment.css';
 const Comment = ({ body, className, rating, userName }) => (
   <div className={`${styles.root} ${className}`}>
     <h3>{userName}</h3>
-    <StarRating starCount={5} value={rating} disabled />
+    <StarRating
+      starCount={5}
+      value={rating} 
+      starFillColor="#0173bd"
+      starStrokeColor="#b7b7b7"
+      starWidth={18}
+      starHeight={18}
+      disabled 
+    />
     <p>{body}</p>
   </div>
 );
