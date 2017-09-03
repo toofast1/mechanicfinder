@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
 import StarRating from './StarRating';
 import CommentSection from './CommentSection';
+
+import MdArrowBack from 'react-icons/md/arrow-back';
 
 import Separator from './Separator';
 
@@ -11,6 +14,13 @@ import defaultImg from 'assets/img/taller-tmp';
 import styles from './WorkshopProfile.css';
 
 import workshopMock from '../data/workshop-mock.json';
+
+const BackBtn = withRouter(({ history }) => (
+  <MdArrowBack
+    className={styles["back-btn"]}
+    onClick={e =>  history.goBack()}
+  />
+));
 
 class WorkshopProfile extends Component {
   constructor({ match: { params: { workshop } } }) {
@@ -42,9 +52,9 @@ class WorkshopProfile extends Component {
     return (
       workshop ?
       <div className={styles.root}>
-        {/* Back to Results Button Here */}
         <div className={styles["profile-section"]}>
           <div className={styles.header}>
+            <BackBtn/>
             <img src={pic} alt="Foto del taller" />
             <div className={styles["header-info"]}>
               <h2>{workshop.name}</h2>

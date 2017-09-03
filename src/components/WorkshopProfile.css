@@ -5,6 +5,14 @@
     color: #222;
 }
 
+.back-btn {
+    position: absolute;
+    cursor: pointer;
+    font-size: 20px;
+    left: 3%;
+    top: 17px;
+}
+
 .header {
     display: flex;
     flex-direction:  column;
