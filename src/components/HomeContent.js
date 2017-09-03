@@ -17,7 +17,7 @@ class HomeContent extends Component {
     const { queryStr } = this.state;
 
     return (
-      <div>
+      <div className={styles.root}>
         <div className={styles.banner}>
           <p>Encuentra tu taller al mejor precio</p>
         </div>
