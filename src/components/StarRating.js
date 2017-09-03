@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 
 import Star from './Star';
 
-function renderStars(count, isColored, value, onChange, onHover, onHoverEnd, props) {
+function renderStars(count, isColored, value, onChange, onHover, onHoverEnd, disabled, props) {
   let stars = [];
 
   for (let i = 0; i < count; i++) {
-    stars = [ ...stars, (
+    const star = disabled ? <Star key={i} colored={isColored(i)} /> : (
       <Star 
         key={i}
         colored={isColored(i)} 
@@ -15,7 +15,9 @@ function renderStars(count, isColored, value, onChange, onHover, onHoverEnd, pro
         onMouseOver={e => onHover(i)}
         onMouseLeave={e => onHoverEnd()}
         {...props}
-      />)]
+      />);
+
+    stars = [ ...stars, star ]
   }
 
   return stars;
@@ -40,7 +42,7 @@ class StarRating extends Component {
     this.setState({ ...this.state, hoveredStarIndex: -1 });
   }
   render() {
-    const { starCount, value, onChange } = this.props;
+    const { starCount, value, onChange, disabled } = this.props;
     const { hoveredStarIndex } = this.state;
     const { onStarHover, onHoverEnd } = this;
 
@@ -53,7 +55,8 @@ class StarRating extends Component {
             value, 
             onChange, 
             onStarHover.bind(this),
-            onHoverEnd.bind(this)
+            onHoverEnd.bind(this),
+            disabled
           )
         }
       </div>
@@ -61,7 +64,13 @@ class StarRating extends Component {
   }
 }
 
+StarRating.defaultProps = {
+  value: 0,
+  onChange: () => {}
+};
+
 StarRating.propTypes = {
+  disabled: PropTypes.bool,
   starCount: PropTypes.number.isRequired,
   value: PropTypes.number,
   onChange: PropTypes.func
