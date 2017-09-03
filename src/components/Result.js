@@ -6,6 +6,8 @@ import FaStarO from 'react-icons/fa/star-o';
 import FaMoney from 'react-icons/fa/money';
 import FaCommentO from 'react-icons/fa/comment-o';
 
+import Separator from './Separator';
+
 import tallerTmp from 'assets/img/taller-tmp';
 
 import styles from './Result.css';
@@ -54,7 +56,7 @@ const Result = ({ className = '', style = {}, data }) => (
       {data.keywords.map((d, i) => 
         <Keywords key={i} kw={d} />)}
       </div>
-      <div className={styles.separator}></div>
+      <Separator />
       <div className={styles["extra-details"]}>
         <p className={styles.location}>
           {data.location}

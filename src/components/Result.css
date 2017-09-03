@@ -46,12 +46,6 @@
     margin: 5px 2px;
 }
 
-.separator {
-    background: #ccc;
-    height: 1px;
-    margin:  13px 0;
-}
-
 .extra-details {
     display: flex;
     justify-content: space-between;
