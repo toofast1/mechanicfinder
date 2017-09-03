@@ -1,2 +1,7 @@
 .root {
 }
+
+.root h3 {
+    color: #222;
+    font-weight: bold;
+}
