@@ -7,7 +7,9 @@
         "description": "Servicio de restauracion de automoviles",
         "keywords": ["Pintura", "Carroceria"],
         "comments": [],
-        "highPrice": 450
+        "highPrice": 450,
+        "shopHours": { "days": "Lunes - Viernes", "hours": "7:00 AM - 5:30 PM" },
+        "paymentTypes": [ "Visa", "Cheques", "Efectivo", "Mastercard", "AMEX" ]
     },
     {
         "name": "Lubricantes Del Norte",
@@ -17,7 +19,9 @@
         "description": "Servicio de cambios de aceite y mas",
         "keywords": ["Aceite", "Baterias", "Varios"],
         "comments": [],
-        "highPrice": 1200
+        "highPrice": 1200,
+        "shopHours": { "days": "Lunes - Viernes", "hours": "7:00 AM - 5:30 PM" },
+        "paymentTypes": [ "Visa", "Cheques", "Efectivo", "Mastercard", "AMEX" ]
     },
     {
         "name": "Radiadores Mora",
@@ -27,7 +31,9 @@
         "description": "Servicio en cambio y reparacion de radiadores",
         "keywords": ["Radiador"],
         "comments": [],
-        "highPrice": 1500
+        "highPrice": 1500,
+        "shopHours": { "days": "Lunes - Viernes", "hours": "7:00 AM - 5:30 PM" },
+        "paymentTypes": [ "Visa", "Cheques", "Efectivo", "Mastercard", "AMEX" ]
     },
     {
         "name": "Taller de Transmisiones Zelaya",
@@ -37,7 +43,9 @@
         "description": "Servicio en cambio y reparacion de transmisiones",
         "keywords": ["Transmision"],
         "comments": [],
-        "highPrice": 450
+        "highPrice": 450,
+        "shopHours": { "days": "Lunes - Viernes", "hours": "7:00 AM - 5:30 PM" },
+        "paymentTypes": [ "Visa", "Cheques", "Efectivo", "Mastercard", "AMEX" ]
     },
     {
         "name": "Centro de Servicio LTH",
@@ -47,7 +55,9 @@
         "description": "Servicio de venta, cambio de baterias",
         "keywords": ["Bateria"],
         "comments": [],
-        "highPrice": 200
+        "highPrice": 200,
+        "shopHours": { "days": "Lunes - Viernes", "hours": "7:00 AM - 5:30 PM" },
+        "paymentTypes": [ "Visa", "Cheques", "Efectivo", "Mastercard", "AMEX" ]
     },
     {
         "name": "TPA Repuestos & Taller Todo Transmisiones",
@@ -57,7 +67,8 @@
         "description": "Servicio de venta, cambio de transmisiones",
         "keywords": ["Transmision"],
         "comments": [],
-        "highPrice": 400
+        "highPrice": 400,
+        "shopHours": { "days": "Lunes - Sabado", "hours": " 9:00 AM - 5:00 PM" }
     },
     {
         "name": "Taller de Transmisiones Automaticas Lara",
@@ -67,7 +78,9 @@
         "description": "Servicion en cambio de transmisiones",
         "keywords": ["Transmision"],
         "comments": [],
-        "highPrice": 1800
+        "highPrice": 1800,
+        "shopHours": { "days": "Lunes - Viernes", "hours": "7:00 AM - 5:30 PM" },
+        "paymentTypes": [ "Visa", "Cheques", "Efectivo", "Mastercard", "AMEX" ]
     },
     {
         "name": "Autoservicio Robelo",
@@ -77,7 +90,9 @@
         "description": "Servicio en cambio de aceite y reparacion de vehiculos",
         "keywords": ["Aceite", "Carroceria"],
         "comments": [],
-        "highPrice": 550
+        "highPrice": 550,
+        "shopHours": { "days": "Lunes - Viernes", "hours": "7:00 AM - 5:30 PM" },
+        "paymentTypes": [ "Visa", "Cheques", "Efectivo", "Mastercard", "AMEX" ]
     },
     {
         "name": "Auseva",
@@ -88,7 +103,9 @@
         "keywords": ["Aceite", "Alineacion", "Carroceria"],
         "comments": [ { "userName": "wupa9", "body": "Super great service!", "rating": 4 },
                       { "userName": "guest", "body": "Super great service!", "rating": 5 } ],
-        "highPrice": 300
+        "highPrice": 300,
+        "shopHours": { "days": "Lunes - Viernes", "hours": "7:00 AM - 5:30 PM" },
+        "paymentTypes": [ "Visa", "Cheques", "Efectivo", "Mastercard", "AMEX" ]
     },
     {
         "name": "Triple A autopartes",
@@ -98,7 +115,9 @@
         "description": "Tienda de repuestos para automoviles",
         "keywords": ["Aceite", "Neumatico", "Frenos", "Alineacion"],
         "comments": [],
-        "highPrice": 900
+        "highPrice": 900,
+        "shopHours": { "days": "Lunes - Viernes", "hours": "7:00 AM - 5:30 PM" },
+        "paymentTypes": [ "Visa", "Cheques", "Efectivo", "Mastercard", "AMEX" ]
     },
     {
         "name": "Auto Frenos Del Norte",
@@ -108,7 +127,9 @@
         "description": "Taller mecanico",
         "keywords": ["Frenos", "Alineacion", "Transmision"],
         "comments": [],
-        "highPrice": 550
+        "highPrice": 550,
+        "shopHours": { "days": "Lunes - Viernes", "hours": "7:00 AM - 5:30 PM" },
+        "paymentTypes": [ "Visa", "Cheques", "Efectivo", "Mastercard", "AMEX" ]
     },
     {
         "name": "Deporti Llantas",
@@ -118,7 +139,9 @@
         "description": "Servicio en venta de llantas",
         "keywords": ["Neumatico"],
         "comments": [],
-        "highPrice": 600
+        "highPrice": 600,
+        "shopHours": { "days": "Lunes - Viernes", "hours": "7:00 AM - 5:30 PM" },
+        "paymentTypes": [ "Visa", "Cheques", "Efectivo", "Mastercard", "AMEX" ]
     },
     {
         "name": "Reencauchadora en Frio Sula",
@@ -128,7 +151,9 @@
         "description": "Taller de reparacion de automoviles",
         "keywords": ["Neumatico", "Radiador"],
         "comments": [],
-        "highPrice": 1000
+        "highPrice": 1000,
+        "shopHours": { "days": "Lunes - Viernes", "hours": "7:00 AM - 5:30 PM" },
+        "paymentTypes": [ "Visa", "Cheques", "Efectivo", "Mastercard", "AMEX" ]
     },
     {
         "name": "Taller Buendia Con Jesus BJNCC",
@@ -138,7 +163,9 @@
         "description": "Taller de automoviles",
         "keywords": ["Rines", "Transmision", "Pintura", "Carroceria", "Radiador"],
         "comments": [],
-        "highPrice": 768
+        "highPrice": 768,
+        "shopHours": { "days": "Lunes - Viernes", "hours": "7:00 AM - 5:30 PM" },
+        "paymentTypes": [ "Visa", "Cheques", "Efectivo", "Mastercard", "AMEX" ]
     },
     {
         "name": "ALLAS - Repuestos, Talleres y Llantas",
@@ -148,6 +175,8 @@
         "description": "Tienda de repuestos para automoviles",
         "keywords": ["Neumatico", "Bateria", "Radiador", "Aceite"],
         "comments": [],
-        "highPrice": 1000
+        "highPrice": 1000,
+        "shopHours": { "days": "Lunes - Viernes", "hours": "7:00 AM - 5:30 PM" },
+        "paymentTypes": [ "Visa", "Cheques", "Efectivo", "Mastercard", "AMEX" ]
     }
 ]
