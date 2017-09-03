@@ -13,7 +13,7 @@ function search(history, value) {
 }
 
 const Input = withRouter(({ value, onChange, history }) => (
-  <input type="text" placeholder="e.g El Mejor Taller" 
+  <input type="text" placeholder="e.g Auseva" 
         value={value} onChange={onChange}
          onKeyPress={e => { if (e.which == 13) search(history, value); }} autoFocus />
 ));
