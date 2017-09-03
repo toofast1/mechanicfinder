@@ -1,0 +1,18 @@
+.root {
+    display: flex;
+    flex-direction: column;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.field > label {
+    margin-bottom: 10px;
+}
+
+.field textarea {
+    min-height: 70px;
+}
