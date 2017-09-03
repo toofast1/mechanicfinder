@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import styles from './CommentSection.css';
+
 import Comment from './Comment';
 import CommentForm from './CommentForm';
 
 const CommentSection = ({ className = '', comments = [], onNewComment = c => {} }) => (
-  <div className={`${className}`}>
+  <div className={`${styles.root} ${className}`}>
     <h2>Comentarios ({comments.length})</h2>
     {
       comments.map((c, i) => (
