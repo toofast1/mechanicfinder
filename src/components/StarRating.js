@@ -7,7 +7,7 @@ function renderStars(count, isColored, value, onChange, onHover, onHoverEnd, dis
   let stars = [];
 
   for (let i = 0; i < count; i++) {
-    const star = disabled ? <Star key={i} colored={isColored(i)} /> : (
+    const star = disabled ? <Star key={i} colored={isColored(i)} {...props} /> : (
       <Star 
         key={i}
         colored={isColored(i)} 
@@ -42,7 +42,9 @@ class StarRating extends Component {
     this.setState({ ...this.state, hoveredStarIndex: -1 });
   }
   render() {
-    const { starCount, value, onChange, disabled } = this.props;
+    const { starCount, value, onChange, disabled, 
+            starFillColor, starStrokeColor, starWidth, 
+            starHeight } = this.props;
     const { hoveredStarIndex } = this.state;
     const { onStarHover, onHoverEnd } = this;
 
@@ -56,7 +58,12 @@ class StarRating extends Component {
             onChange, 
             onStarHover.bind(this),
             onHoverEnd.bind(this),
-            disabled
+            disabled,
+            { fillColor: starFillColor, 
+              strokeColor: starStrokeColor,
+              width: starWidth,
+              height: starHeight
+            }
           )
         }
       </div>
@@ -72,6 +79,10 @@ StarRating.defaultProps = {
 StarRating.propTypes = {
   disabled: PropTypes.bool,
   starCount: PropTypes.number.isRequired,
+  starFillColor: PropTypes.string,
+  starStrokeColor: PropTypes.string,
+  starWidth: PropTypes.number,
+  starHeight: PropTypes.number,
   value: PropTypes.number,
   onChange: PropTypes.func
 };
