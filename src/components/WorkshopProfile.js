@@ -4,6 +4,8 @@ import { Redirect } from 'react-router-dom';
 import StarRating from './StarRating';
 import CommentSection from './CommentSection';
 
+import Separator from './Separator';
+
 import defaultImg from 'assets/img/taller-tmp';
 
 import styles from './WorkshopProfile.css';
@@ -40,19 +42,31 @@ class WorkshopProfile extends Component {
     return (
       workshop ?
       <div className={styles.root}>
-        <div className={styles["img-area"]}>
-          <img src={pic} alt="Foto del taller" />
-        </div>
-        <div className={styles.details}>
-          <h2>{workshop.name}</h2>
-          <StarRating
-            starCount={5}
-            value={Math.round(rating)}
-            onChange={onRatingChange.bind(this)} 
-          />
-          <p><b>Precio Alto:</b> Lps. {workshop.highPrice}</p>
-          <p><b>Descripcion:</b> {workshop.description}</p>
-          <p><b>Ubicacion:</b> {workshop.location}</p>
+        {/* Back to Results Button Here */}
+        <div className={styles["profile-section"]}>
+          <div className={styles["img-area"]}>
+            <img src={pic} alt="Foto del taller" />
+          </div>
+          <div className={styles.details}>
+            <h2>{workshop.name}</h2>
+            <p className={styles.location}>{workshop.location}</p>
+            <StarRating
+              starCount={5}
+              value={Math.round(rating)}
+              disabled
+            />
+            <Separator />
+            <h4>Sobre Este Taller</h4>
+            <p>{workshop.description}</p>
+            <Separator />
+            <h4>Horas de Atencion</h4>
+            <Separator />
+            <h4>Servicios</h4>
+            {workshop.keywords.map((k, i) => <p key={i}>{k}</p>)}
+            <Separator />
+            <h4>Tipos de Pago</h4>
+            <Separator />
+          </div>
         </div>
         <CommentSection
           className={styles.comments}
