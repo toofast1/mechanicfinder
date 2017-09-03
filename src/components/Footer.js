@@ -45,6 +45,18 @@ const Footer = props => (
       </PrimarySection>
     </div>
     <div className={styles.secondary}>
+      <ul className={styles.appendix}>
+        <li>Terminos y Condiciones</li>
+        <li>Informacion Legal</li>
+        <li>Politica de Privacidad</li>
+        <li>Politica de Cookies</li>
+        <li>Mapa del Sitio</li>
+        <li>Centro de Apoyo</li>
+      </ul>
+      <h2 className={styles.logo}>Mechanic Finder</h2>
+      <div className={styles.copyrights}>
+        Copyright 2017 MechanicFinder | Derechos Reservados
+      </div>
     </div>
   </footer>
 );

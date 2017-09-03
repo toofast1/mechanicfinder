@@ -70,3 +70,40 @@
     cursor: pointer;
     margin-right: 7px;
 }
+
+.appendix {
+    padding: 16px 16px 8px;
+    text-align: center;
+    list-style: none;
+}
+
+.appendix li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 4px 8px 4px 0;
+}
+
+.appendix li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 4px 8px 4px 0;
+    cursor: pointer;
+}
+
+.appendix li:not(:first-of-type)::before {
+    color: #9ba2a6;
+    content: "|";
+    margin-right: 8px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.copyrights {
+    color: #9ba2a6;
+    font-size: 12px;
+    padding: 12px 16px 16px;
+    text-align: center;
+}
