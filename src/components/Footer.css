@@ -1,3 +1,72 @@
 .root {
-    
+    color: #fff;
+}
+
+.root, .root * {
+    font-family: 'Roboto', 'sans-serif';
+}
+
+.primary, .secondary {
+    padding: 5px 15px;
+}
+
+.primary {
+    background-color: #293339;
+    padding-bottom: 30px;
+}
+
+.secondary {
+    background-color: #37454d;
+    font-size: 14px;
+}
+
+.primary-section p {
+    margin: 5px 0;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-form input {
+    border: 1px solid #9ba2a6;
+    border-radius: 2px;
+    color: #37454d;
+    font-size: 16px;
+    height: 44px;
+    padding: 0 12px;
+    text-align: left;
+    background-color: #fff;
+    margin: 0;
+    overflow: visible;
+}
+
+.newsletter-form input:focus {
+    outline: 1px dotted #37454d;
+    outline-offset: -3px;
+    box-shadow: none;
+}
+
+.newsletter-form button {
+    margin: 16px 0 0;
+    height: 44px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #37454d;
+    border: 1px solid #37454d;
+}
+
+.social {
+    display: flex;
+    font-size: 26px;
+}
+
+.social svg {
+    cursor: pointer;
+    margin-right: 7px;
 }
