@@ -10,9 +10,43 @@
 }
 
 .field > label {
+    color: #222;
+    font-weight: bold;
     margin-bottom: 10px;
+}
+
+.field input[type="text"] {
+    min-height: 45px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .field textarea {
     min-height: 70px;
+}
+
+.field input[type="text"],
+.field textarea {
+    font-family: 'Roboto', 'sans-serif';
+    border: 2px solid #d7d7d7;
+    background-color: #fff;
+    color: #222;
+    font-size: 13px;
+    overflow: visible;
+}
+
+.field input[type="text"]:focus,
+.field textarea:focus {
+    box-shadow: 0 0 5px #0173bd;
+    outline: 0;
+}
+
+.root button {
+    font-family: 'Roboto', 'sans-serif';
+    background-color: #cb8700;
+    color: #fff;
+    border: none;
+    height: 45px;
+    font-size: 16px;
+    margin-bottom: 10px;
 }

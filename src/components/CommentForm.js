@@ -43,7 +43,15 @@ class CommentForm extends Component {
         </div>
         <div className={styles.field}>
           <label>Puntaje General:*</label>
-          <StarRating starCount={5} value={rating} onChange={onRatingChange.bind(this)} />
+          <StarRating
+            starCount={5}
+            value={rating}
+            starFillColor="#0173bd"
+            starStrokeColor="#b7b7b7"
+            starWidth={20}
+            starHeight={24}
+            onChange={onRatingChange.bind(this)} 
+          />
         </div>
         <div className={styles.field}>
           <label>Comentario:*</label>
