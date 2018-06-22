@@ -29,26 +29,26 @@ const H2 = withRouter(({ className, history, children }) => (
 
 const Result = ({ className = '', style = {}, data }) => (
   <div className={`${styles.root} ${className}`} style={style}>
-    { data.picture ? <img className={styles.picture} src={data.picture} alt="Foto del taller" /> : null }
+    { data.picture ? <img className={styles.picture} src={data.picture} alt="Fotografie service auto" /> : null }
     <div className={styles.details}>
       <H2 className={styles.title}>{data.name}</H2>
       <div className={styles.stats}>
         <IconPair
           Icon={FaStarO}
           text={data.userScore}
-          title="Puntaje General"
+          title="Rating"
           style={iconPairStyle}
         />
         <IconPair
           Icon={FaCommentO}
           text={data.comments.length}
-          title="Comentarios"
+          title="Comentarii"
           style={iconPairStyle} 
         />
         <IconPair
           Icon={FaMoney}
-          text={data.highPrice}
-          title="Precio Estimado"
+          text={data.highPrice + ' RON'}
+          title="Pret estimativ"
         />
       </div>
       <p className={styles.description}>{data.description}</p>

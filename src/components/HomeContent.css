@@ -1,10 +1,11 @@
 .root {
     height: 100vh;
+	background: url('assets/img/bg.jpg') no-repeat center;
+	background-size:cover;
 }
 
 .banner {
     display: flex;
-    margin-top: 62px;
     margin-bottom: 37px;
     justify-content: center;
 }
@@ -18,7 +19,7 @@
     font-size: 22px;
     font-family: 'Roboto', 'sans-serif';
     text-align: center;
-    color: #007fad;
+    color: #e74c3c;
     max-width: 250px;
 }
 

@@ -8,13 +8,13 @@ import CommentForm from './CommentForm';
 
 const CommentSection = ({ className = '', comments = [], onNewComment = c => {} }) => (
   <div className={`${styles.root} ${className}`}>
-    <h2>Comentarios ({comments.length})</h2>
+    <h2>Comentarii ({comments.length})</h2>
     {
       comments.map((c, i) => (
         <Comment key={i} {...c} />
       ))
     }
-    <h2>Comenta tu Opinion</h2>
+    <h2>Spune-ti parerea</h2>
     <CommentForm onSubmit={onNewComment} />
   </div>
 );

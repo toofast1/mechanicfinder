@@ -38,11 +38,11 @@ class CommentForm extends Component {
     return (
       <form  className={styles.root}>
         <div className={styles.field}>
-          <label>Nombre:</label>
+          <label>Nume:</label>
           <input type="text" value={userName} onChange={onUsernameChange.bind(this)} />
         </div>
         <div className={styles.field}>
-          <label>Puntaje General:*</label>
+          <label>Rating:*</label>
           <StarRating
             starCount={5}
             value={rating}
@@ -54,10 +54,10 @@ class CommentForm extends Component {
           />
         </div>
         <div className={styles.field}>
-          <label>Comentario:*</label>
+          <label>Comentariu:*</label>
           <textarea value={body} onChange={onBodyChange.bind(this)} />
         </div>
-        <button onClick={onFormSubmit.bind(this)}>Comentar</button>
+        <button onClick={onFormSubmit.bind(this)}>Trimite</button>
       </form>
     );
   }

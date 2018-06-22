@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     background-color: #fff;
-    height: 56px;
     box-shadow: 0 0 5px 0 #333;
 }
 
@@ -10,6 +9,18 @@
     cursor: pointer;
     width: 33%;
     height: 90%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+	font-family: 'Roboto', sans-serif;
+	
+	color: #000;
+}
+
+.logo a:-webkit-any-link {  
+	text-decoration: none !important;
 }
 
 @media screen and (min-width: 500px) {

@@ -19,7 +19,7 @@ class HomeContent extends Component {
     return (
       <div className={styles.root}>
         <div className={styles.banner}>
-          <p>Encuentra tu taller al mejor precio</p>
+          <p>Găsiți service auto Alfa Romeo la cel mai bun pret</p>
         </div>
         <div className={styles.search}>
           <SearchBox value={queryStr} 

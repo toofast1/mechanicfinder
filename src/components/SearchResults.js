@@ -11,8 +11,8 @@ import styles from './SearchResults.css';
 import workshopMock from '../data/workshop-mock.json';
 
 const SORTING_OPTIONS = {
-  PRICE: { text: 'Ordenar por Precio', sortingFn: sortByPrice },
-  SCORE: { text: 'Ordenar por Puntaje', sortingFn: sortByScore }
+  PRICE: { text: 'Ordonare dupa pret', sortingFn: sortByPrice },
+  SCORE: { text: 'Ordonare dupa rating', sortingFn: sortByScore }
 };
 
 function nameMatches({ name }, queryStr) {
@@ -68,7 +68,7 @@ class SearchResults extends Component {
     this.state = {
       queryStr,
       results: sortByPrice(queryResults(queryStr)),
-      selectedSort: 'PRICE'
+      selectedSort: 'PRET'
     };
   }
   componentWillReceiveProps(props) {

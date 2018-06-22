@@ -9,19 +9,19 @@
     font-size: 16px;
     height: 45px;
     color: #37454d;
-    border: 1px solid #9ba2a6;
+    border: 1px solid #e74c3c;
     border-radius: 2px 0 0 2px;
     text-overflow: ellipsis;    
 }
 
 .root > input:focus {
-    outline: 2px solid #70ace9
+    outline: 2px solid #e74c3c;
 }
 
 .root > button {
     font-family: 'Roboto', 'sans-serif';
     font-size: 16px;
-    background: #007EAD;
+    background: #e74c3c;
     border: none;
     color: #fff;
     height: 49px;

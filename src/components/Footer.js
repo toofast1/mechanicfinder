@@ -20,47 +20,23 @@ const Footer = props => (
     <div className={styles.primary}>
       <div>
         <div className={styles.newsletter}>
-          <p>Quieres recibir nuestras ofertas? Suscribete a nuestro newsletter!</p>
+          <p>Vreți să primiți ofertele noastre? Aboneaza-te la newsletter-ul nostru!</p>
           <div className={styles["newsletter-form"]}> 
-            <input type="text" placeholder="Correo Electronico" />
-            <button>Suscribete</button>
+            <input type="text" placeholder="Adresa email" />
+            <button>Abonare</button>
           </div>
-        </div>
-        <Separator className={styles["newsletter-separator"]} color="#697379" width={2} />
-        <div className={styles.primaries}>
-          <PrimarySection title="Nuestra Empresa">
-            <p>Empresa</p>
-            <p>Trabajos</p>
-            <p>Carreras</p>
-            <p>Prensa</p>
-            <p>Inversionistas</p>
-          </PrimarySection>
-          <PrimarySection title="Contactanos">
-            <div className={styles.social}>
-              <FaFacebookOfficial />
-              <FaTwitter />
-              <FaInstagram />
-              <FaGooglePlus />
-              <FaYoutubePlay />
-              <FaPinterest />
-              <FaLinkedin />
-            </div>
-          </PrimarySection>
         </div>
       </div>
     </div>
     <div className={styles.secondary}>
       <ul className={styles.appendix}>
-        <li>Terminos y Condiciones</li>
-        <li>Informacion Legal</li>
-        <li>Politica de Privacidad</li>
-        <li>Politica de Cookies</li>
-        <li>Mapa del Sitio</li>
-        <li>Centro de Apoyo</li>
+        <li>Termeni si Conditii</li>
+        <li>Politica de Confidentialitate</li>
+		<li>Contact</li>
       </ul>
-      <h2 className={styles.logo}>Mechanic Finder</h2>
+      <h2 className={styles.logo}>Mecanici Alfa Romeo Romania</h2>
       <div className={styles.copyrights}>
-        Copyright 2017 MechanicFinder | Derechos Reservados
+        Copyright &copy; Mechanic Finder 2018. Toate drepturile rezervate.
       </div>
     </div>
   </footer>

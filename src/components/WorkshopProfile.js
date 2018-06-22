@@ -58,7 +58,7 @@ class WorkshopProfile extends Component {
         <div className={styles["profile-section"]}>
           <div className={styles.header}>
             <BackBtn/>
-            <img src={pic} alt="Foto del taller" />
+            <img src={pic} alt="Fotografie service auto" />
             <div className={styles["header-info"]}>
               <h2>{workshop.name}</h2>
               <p className={styles.location}>{workshop.location}</p>
@@ -76,12 +76,12 @@ class WorkshopProfile extends Component {
           <div className={styles.details}>
             <Separator />
             <div className={styles["detail-section"]}>
-              <h4>Sobre Este Taller</h4>
+              <h4>Despre service auto</h4>
               <p className={styles.description}>{workshop.description}</p>
             </div>
             <Separator />
             <div className={styles["detail-section"]}>
-              <h4>Horas de Atencion</h4>
+              <h4>Orele de functionare</h4>
               <p className={styles["shop-hours"]}>
                 <b>{workshop.shopHours.days}</b>
                 <span>{workshop.shopHours.hours}</span>
@@ -89,14 +89,14 @@ class WorkshopProfile extends Component {
             </div>
             <Separator />
             <div className={styles["detail-section"]}>
-              <h4>Servicios</h4>
+              <h4>Servicii</h4>
               <ul>
                 {workshop.keywords.map((k, i) => <li key={i}>{k}</li>)}
               </ul>
             </div>
             <Separator />
             <div className={styles["detail-section"]}>
-              <h4>Tipos de Pago</h4>
+              <h4>Metode de plata</h4>
               <ul>
                 {workshop.paymentTypes.map((p, i) => <li key={i}>{p}</li>)}
               </ul>

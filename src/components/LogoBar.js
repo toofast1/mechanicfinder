@@ -11,7 +11,7 @@ const Img = withRouter(({ history }) => (
 
 const LogoBar = () => (
   <div className={styles.root}>
-    <Img />
+    <a href="/" onClick={e => history.push('/')}><h2 className={styles.logo}>Mecanici Alfa Romeo Romania</h2></a>
   </div>
 );
 

@@ -9,11 +9,11 @@ const linkStyle = { color: "#fff", textDecoration: "none" };
 function search(history, value) {
   value = value.trim();
   if (value.length > 0)
-    history.push(`/buscar?q=${value}`);
+    history.push(`/cautare?q=${value}`);
 }
 
 const Input = withRouter(({ value, onChange, history }) => (
-  <input type="text" placeholder="e.g Auseva" 
+  <input type="text" placeholder="ex: Bucuresti" 
         value={value} onChange={onChange}
          onKeyPress={e => { if (e.which == 13) search(history, value); }} autoFocus />
 ));
