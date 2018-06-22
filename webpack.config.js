@@ -20,7 +20,7 @@ const conf = {
         contentBase: path.join(__dirname, 'public'),
         historyApiFallback: true,
         hot: true,
-        port: 3000,
+        port: 80,
         overlay: true,
         watchContentBase: true
     },
